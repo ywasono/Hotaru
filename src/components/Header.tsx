@@ -41,7 +41,9 @@ export default function Header({ activePage, setActivePage, openBookingModal }: 
     <header
       id="restaurant-header"
       className={`fixed top-0 left-0 right-0 z-40 transition-all duration-300 ${
-        isScrolled
+        isMobileMenuOpen
+          ? 'bg-white shadow-sm border-b border-brand-cream-dark py-3'
+          : isScrolled
           ? 'bg-brand-offwhite/95 backdrop-blur-md shadow-sm border-b border-brand-cream-dark py-3'
           : 'bg-brand-offwhite/70 backdrop-blur-sm py-5'
       }`}
@@ -125,7 +127,7 @@ export default function Header({ activePage, setActivePage, openBookingModal }: 
       {isMobileMenuOpen && (
         <div
           id="mobile-navigation-drawer"
-          className="md:hidden fixed inset-0 top-[60px] bg-brand-offwhite/98 backdrop-blur-lg z-50 animate-fade-in border-t border-brand-cream-dark"
+          className="md:hidden fixed inset-0 top-[60px] bg-white z-50 animate-fade-in border-t border-brand-cream-dark overflow-y-auto"
         >
           <div className="p-6 space-y-6 flex flex-col h-full justify-between pb-24">
             <div className="space-y-4">

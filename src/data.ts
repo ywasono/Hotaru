@@ -1,5 +1,20 @@
 import { MenuItem, Review } from './types';
 
+// Import image assets statically so Vite bundles them during deployment
+import heroImg from './assets/images/hotaru_hero_interior_1779779318779.png';
+import sushiPlatterImg from './assets/images/hotaru_sushi_platter_1779779337460.png';
+import katsuCurryImg from './assets/images/hotaru_katsu_curry_1779779359562.png';
+import aburiSalmonImg from './assets/images/aburi_salmon_nigiri_1779780235935.png';
+import deluxeBentoImg from './assets/images/deluxe_bento_box_1779780260136.png';
+import premiumSashimiImg from './assets/images/premium_sashimi_1779780656536.png';
+import rainbowRollImg from './assets/images/rainbow_roll_1779780675601.png';
+import gyuDonImg from './assets/images/gyu_don_1779780692614.png';
+import porkGyozaImg from './assets/images/pork_gyoza_1779780709579.png';
+import tempuraPlatterImg from './assets/images/tempura_platter_1779780725437.png';
+import agedashiTofuImg from './assets/images/agedashi_tofu_1779780745952.png';
+import garlicEdamameImg from './assets/images/garlic_edamame_1779780771001.png';
+import katsuDonburiImg from './assets/images/katsu_donburi_bowl_1779780989705.png';
+
 export const RESTAURANT_INFO = {
   name: 'Hotaru Japanese Restaurant',
   location: {
@@ -29,19 +44,19 @@ export const RESTAURANT_INFO = {
 };
 
 export const IMAGES = {
-  hero: '/src/assets/images/hotaru_hero_interior_1779779318779.png',
-  sushiPlatter: '/src/assets/images/hotaru_sushi_platter_1779779337460.png',
-  katsuCurry: '/src/assets/images/hotaru_katsu_curry_1779779359562.png',
-  aburiSalmon: '/src/assets/images/aburi_salmon_nigiri_1779780235935.png',
-  deluxeBento: '/src/assets/images/deluxe_bento_box_1779780260136.png',
-  premiumSashimi: '/src/assets/images/premium_sashimi_1779780656536.png',
-  rainbowRoll: '/src/assets/images/rainbow_roll_1779780675601.png',
-  gyuDon: '/src/assets/images/gyu_don_1779780692614.png',
-  porkGyoza: '/src/assets/images/pork_gyoza_1779780709579.png',
-  tempuraPlatter: '/src/assets/images/tempura_platter_1779780725437.png',
-  agedashiTofu: '/src/assets/images/agedashi_tofu_1779780745952.png',
-  garlicEdamame: '/src/assets/images/garlic_edamame_1779780771001.png',
-  katsuDonburi: '/src/assets/images/katsu_donburi_bowl_1779780989705.png',
+  hero: heroImg,
+  sushiPlatter: sushiPlatterImg,
+  katsuCurry: katsuCurryImg,
+  aburiSalmon: aburiSalmonImg,
+  deluxeBento: deluxeBentoImg,
+  premiumSashimi: premiumSashimiImg,
+  rainbowRoll: rainbowRollImg,
+  gyuDon: gyuDonImg,
+  porkGyoza: porkGyozaImg,
+  tempuraPlatter: tempuraPlatterImg,
+  agedashiTofu: agedashiTofuImg,
+  garlicEdamame: garlicEdamameImg,
+  katsuDonburi: katsuDonburiImg,
 };
 
 export const REVIEWS: Review[] = [

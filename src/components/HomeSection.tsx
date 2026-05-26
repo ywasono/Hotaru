@@ -1,6 +1,6 @@
 import { motion } from 'motion/react';
 import { ActivePage, MenuItem } from '../types';
-import { RESTAURANT_INFO, REVIEWS, MENU_ITEMS } from '../data';
+import { RESTAURANT_INFO, REVIEWS, MENU_ITEMS, IMAGES } from '../data';
 import { Phone, ArrowRight, Star, Heart, Award, Sparkles, AlertCircle } from 'lucide-react';
 
 interface HomeSectionProps {
@@ -20,7 +20,7 @@ export default function HomeSection({ setActivePage, openBookingModal }: HomeSec
         <div className="absolute inset-0 z-0">
           <div className="absolute inset-0 bg-gradient-to-t from-brand-offwhite via-brand-offwhite/50 to-brand-offwhite/80 z-10" />
           <img
-            src="/src/assets/images/hotaru_hero_interior_1779779318779.png"
+            src={IMAGES.hero}
             alt="Hotaru Cozy Dining Room Adelaide"
             referrerPolicy="no-referrer"
             className="w-full h-full object-cover opacity-60 scale-102 transform transition-transform duration-10000"
