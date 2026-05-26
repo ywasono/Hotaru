@@ -1,0 +1,6 @@
+{
+  "name": "Hotaru Japanese Restaurant",
+  "description": "An inviting, cozy website for Hotaru Japanese Restaurant in Adelaide, Australia, showcasing authentic traditional Japanese comfort food, sushi platters, and hearty rice bowls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
